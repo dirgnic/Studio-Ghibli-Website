@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Ghibli Fanpage</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="index.html"> &gt; Home &lt; </a>
+                </li>
+
+                <li><a href="#about">About</a>
+                    <div class="dropdown">
+                        <a href="history.html">The History</a>
+                        <a href="founders.html">The Founders</a>
+                        <a href="animation.html">Animation</a>
+
+                    </div>
+                </li>
+                <li><a href="#movies">Movies: IMDB</a>
+                    <div class="dropdown">
+                        <a href="https://www.imdb.com/title/tt0245429/">Spirited Away</a>
+                        <a href="https://www.imdb.com/title/tt0095327/">Grave of the Fireflies</a>
+                        <a href="https://www.imdb.com/title/tt0097814/">Kiki's Delivery Service</a>
+                        <a href="https://www.imdb.com/title/tt0096283/">My Neighbor Totoro</a>
+                    </div>
+                </li>
+                <li><a href="#characters">Characters</a>
+                    <div class="dropdown">
+                        <a href="#chihiro">Chihiro</a>
+                        <a href="#seita">Seita</a>
+                        <a href="#kiki">Kiki</a>
+                        <a href="#totoro">Totoro</a>
+                    </div>
+                </li>
+                <li><a href="#contact"> &gt; Contact &lt;</a>
+                </li>
+            </ul>
+        </nav>
+    
+        <div class = "container-header">
+         <div id="slideshow">
+            <div class="slide-wrapper">
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+              <div class="slide"></div>
+            </div>
+        </div>
+
+        
+          <div class="titlu-header overlay">
+            <span>Studio Ghilbli<br>Fanpage</span>
+          </div>
+        </div>
+          
+    </header>
+
+
+    <main>
+        <section id="about">
+            <h2>About Studio Ghibli</h2>
+            <p>Studio Ghibli is a Japanese animation film studio headquartered in Tokyo, Japan.</p>
+            <p>Founded in 1985 by Hayao Miyazaki and Isao Takahata, the studio has produced some of the most acclaimed animated films in the world.</p>
+        </section>
+
+        <section id="movies">
+            <h2>Popular Movies</h2>
+            <div class="poster-container">
+                <div class="movie">
+                    <img src="img/afis_sp_away.jpeg" alt="Spirited Away">
+                    <h3>Spirited Away</h3>
+                    <p>A young girl, Chihiro, finds herself trapped in a mysterious world of spirits and must navigate through it to save her parents and return to the human world.</p>
+                </div>
+                <div class="movie">
+                    <img src="img/afis_gr_fire.jpeg" alt="Grave of the Fireflies">
+                    <h3>Grave of the Fireflies</h3>
+                    <p>In the midst of World War II, a young boy and his little sister struggle to survive in war-torn Japan after their home is destroyed by firebombing.</p>
+                </div>
+                <div class="movie">
+                    <img src="img/afis_kikis_deliv_service.jpg" alt="Kiki's Delivery Service">
+                    <h3>Kiki's Delivery Service</h3>
+                    <p>Follow Kiki, a young witch, as she embarks on her mandatory year of independence and sets up a flying courier service in a quaint seaside town.</p>
+                </div>
+                <div class="movie">
+                    <img src="img/afis_my_neigh_totoro.jpg" alt="My Neighbor Totoro">
+                    <h3>My Neighbor Totoro</h3>
+                    <p>Two young sisters, Satsuki and Mei, befriend friendly forest spirits, including the iconic Totoro, while their mother is in the hospital, bringing magic and wonder into their lives.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="characters">
+            <h2>Popular Characters</h2>
+            <div class="poster-container">
+                <div id="chihiro" class ="character">
+                    <img src="img/chihiro.jpg" alt="Chihiro">
+                    <h3>Chihiro</h3>
+                    <p>Chihiro is the main protagonist of "Spirited Away." She starts off as a whiny and petulant girl but grows into a courageous and determined young woman as she navigates the spirit world to save her parents.</p>
+                </div>
+                <div id="seita" class="character">
+                    <img src="img/seita.jpg" alt="Seita">
+                    <h3>Seita</h3>
+                    <p>Seita is one of the main characters in "Grave of the Fireflies." He is a teenage boy who, along with his younger sister Setsuko, struggles to survive in war-torn Japan during World War II.</p>
+                </div>
+                <div id="kiki" class="character">
+                    <img src="img/kiki.jpg" alt="Kiki">
+                    <h3>Kiki</h3>
+                    <p>Kiki is the titular character of "Kiki's Delivery Service." She is a young witch who sets out on a journey of self-discovery during her mandatory year of independence, learning about friendship, responsibility, and the value of hard work.</p>
+                </div>
+                <div id="totoro" class="character">
+                    <img src="img/totoro.jpg" alt="Totoro">
+                    <h3>Totoro</h3>
+                    <p>Totoro is a gentle forest spirit and the titular character of "My Neighbor Totoro." He befriends two young sisters, Satsuki and Mei, and introduces them to the magical world of the forest, providing comfort and guidance when they need it most.</p>
+                </div>
+            </div>
+        </section>
+
+        <button id="loginBtn" class="btn">Login</button>
+
+        <div id="loginForm" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <form id="login" action="/login" method="POST">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+        </div>
+        
+        <button id="logoutBtn" class="btn" style="display: none;">Logout</button>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>For any inquiries, please contact us at:</p>
+            <p>Email: example@example.com</p>
+        </section>
+
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Studio Ghibli Fanpage. All rights reserved.</p>
+    </footer>
+</body>
+</html>

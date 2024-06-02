@@ -1,0 +1,354 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+  font-family: "Inconsolata", cursive;
+}
+
+body {
+  line-height: 1.6;
+  background-color: #f0f0f0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 0px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.container-header {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.titlu-header {
+  position: relative;
+  text-align: center;
+}
+
+.titlu-header span {
+  display: inline-block;
+  font-size: 90px;
+  color: #fff; 
+  opacity: 0; 
+}
+
+/* Ensuring consistent sizing for the result element */
+#result {
+  width: 100%;
+  min-height: 50px;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center text horizontally */
+}
+
+
+/* Basic CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flexbox layout for widget body */
+#widget-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.widget-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.widget-form input[type="text"],
+.widget-form input[type="number"],
+.widget-form input[type="range"],
+.widget-form input[type="text"] {
+  width: 80%; 
+  max-width: 500px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+  text-align: left;
+  resize: both;
+  overflow: auto;
+  white-space: normal;
+}
+
+#question {
+  height: 100px;
+}
+
+.gender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.widget-form button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 3px solid;
+  cursor: pointer;
+  font-family: "Inconsolata", cursive;
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .widget-form input[type="text"],
+  .widget-form input[type="number"],
+  .widget-form input[type="range"] {
+      width: 90%; 
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .widget-form input[type="text"],
+  .widget-form input[type="number"],
+  .widget-form input[type="range"] {
+      width: 95%; 
+  }
+}
+
+
+#find-out-more {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 20vh;
+}
+
+#find-out-more h2 {
+  margin-bottom: 10px;
+}
+
+#find-out-more button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: 3px solid;
+  cursor: pointer;
+  font-family: "Inconsolata", cursive;
+}
+
+.fade-in-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  animation: fadeInImage 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInImage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.titlu-header span {
+  animation: fadeIn 1.5s ease forwards;
+}
+
+.links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.links li {
+  display: inline-block;
+  position: relative;
+}
+
+.links li a {
+  display: block;
+  padding: 8px 16px;
+  color: #fff;
+  background-color: #000;
+  text-decoration: none;
+}
+
+.links li:hover .dropdown {
+  display: block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown a {
+  color: #000;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #ddd;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+}
+
+.event {
+  display: flex;
+  margin-bottom: 20px;
+  position: relative;
+  opacity: 0;
+}
+
+.event-image {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: filter 0.5s ease;
+}
+
+.event-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.event-description {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #4F7942 ;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.event {
+  animation: fadeIn 1s ease forwards;
+  animation-delay: var(--animation-delay);
+}
+
+.event:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.event:hover .event-image img {
+  filter: grayscale(0%); /* facem color cand hover */
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+
