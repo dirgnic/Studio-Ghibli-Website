@@ -20,6 +20,11 @@ This project is a fanpage dedicated to Studio Ghibli, created as part of the **W
 - **Timeline Animation**: A timeline section visually highlights key events in Studio Ghibli’s history with fade-in animations.
 - **Dropdown Navigation**: The website features a multi-level navigation menu with hover-based dropdowns for easy access.
 
+## Screenshots
+![Screenshot 2024-10-12 041930](https://github.com/user-attachments/assets/d5c3e161-a4e3-4eba-b8d3-1bc97044cfb4)
+![Screenshot 2024-10-12 041950](https://github.com/user-attachments/assets/3843cd60-f1b9-4139-86c3-830867bce904)
+![Screenshot 2024-10-12 042020](https://github.com/user-attachments/assets/b1388a96-d71e-48ca-b433-7ac5c09043d7)
+
 ## Technologies Used
 
 ### Frontend:
